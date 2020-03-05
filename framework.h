@@ -178,7 +178,7 @@ class Texture {
 		height = bitmapFileHeader[11];
 		unsigned int size = (unsigned long)bitmapFileHeader[17] + (unsigned long)bitmapFileHeader[18] * 65536;
 		fseek(file, 54, SEEK_SET);
-		std::vector<byte> bImage(size);
+		std::vector<GLbyte> bImage(size);
 		fread(&bImage[0], 1, size, file); 	// read the pixels
 		fclose(file);
 		std::vector<vec4> image(width * height);
