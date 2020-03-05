@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 set( OpenGL_GL_PREFERENCE GLVND)
+set( CMAKE_EXPORT_COMPILE_COMMANDS ON )
 
 project(SkeletonTest)
 add_executable(SkeletonTest framework.cpp Skeleton.cpp)

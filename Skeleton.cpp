@@ -136,8 +136,8 @@ void onMouse(int button, int state, int pX, int pY) { // pX, pY are the pixel co
 
 	char * buttonStat;
 	switch (state) {
-	case GLUT_DOWN: buttonStat = "pressed"; break;
-	case GLUT_UP:   buttonStat = "released"; break;
+	case GLUT_DOWN: buttonStat = (char*) "pressed"; break;
+	case GLUT_UP:   buttonStat = (char*) "released"; break;
 	}
 
 	switch (button) {
